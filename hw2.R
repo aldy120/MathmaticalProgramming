@@ -15,9 +15,9 @@ DerivativeOfTheFunction=function(x)
 
 x1=runif(10000)# 0~1
 y1=InverseOfTheFunction(x1)
-hist(y1,breaks=50)
+hist(y1,breaks=50,col="steelblue")
 
-x2=seq(0.05,8,0.01)
+x2=seq(0.05,10,0.01)
 y2=DerivativeOfTheFunction(x2)
 plot(x2,y2,"l")
 
