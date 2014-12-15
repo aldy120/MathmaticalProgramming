@@ -16,7 +16,7 @@ f=function(x)
 #   cat("h=",h,"\tv=",v,"\n\n")
 # }
 dim=2
-cat("n=2")
+cat("n= 2\n")
 for(h in c(0.01,0.005,0.001))
 {
   ptm=proc.time()
@@ -45,7 +45,7 @@ for(h in c(0.01,0.005,0.001))
 #   cat("h=",h,"\tv=",v,"\n")
 # }
 dim=3
-cat("n=3")
+cat("n= 3\n")
 for(h in c(0.01,0.005,0.001))
 {
   ptm=proc.time()
@@ -66,24 +66,27 @@ for(h in c(0.01,0.005,0.001))
   print(proc.time()-ptm)
   cat("v=",sum,"\n\n")
 }
+##################################
 # the output:
 # n=2
-# h= 0.05
-# timespan=  
+# h= 0.01 
+# timeSpan=
 #   user  system elapsed 
-# 0.1     0.0     0.1 
-# v= 0.04562066 
-# h= 0.04  
-# timespan=  
-#   user  system elapsed 
-# 0.17    0.00    0.17 
-# v= 0.04441103 
-# h= 0.03  
-# timespan=  
-#   user  system elapsed 
-# 0.33    0.00    0.32 
-# v= 0.04234243 
+# 0.06    0.00    0.06 
+# v= 0.1187128 
 # 
+# h= 0.005 
+# timeSpan=
+#   user  system elapsed 
+# 0.25    0.00    0.25 
+# v= 0.1176123 
+# 
+# h= 0.001 
+# timeSpan=
+#   user  system elapsed 
+# 6.22    0.02    6.27 
+# v= 0.1167351 
+##################################
 # n=3
 # timespan=  
 #   user  system elapsed 
